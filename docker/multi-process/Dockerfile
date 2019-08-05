@@ -36,7 +36,7 @@ COPY ["docker/multi-process/scripts/bootstrap.sh", \
       "docker/multi-process/scripts/foreman.sh", \
       "docker/multi-process/scripts/init", \
       "docker/scripts/setup_env", "/scripts/"]
-CMD ["/scripts/init"]
+RUN ["/scripts/init"]
 
 USER 1001
 
